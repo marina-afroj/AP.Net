@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Services";
+}
+
+<main>
+    <section>
+        <h1 class="text-center">
+            @ViewBag.Title
+        </h1>
+        <br />
+
+        <p>
+            Nascenia Is an Award-Winning Software Company Working for European and North American Clients
+        </p>
+    </section>
+
+    <!--show the services-->
+
+    <h1 class="text-center">We Provide</h1>
+
+    <br />
+
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">
+                <h5>@item.Title</h5>
+                <p>@item.Description</p>
+            </li>
+            <br />
+        }
+    </ul>
+</main>

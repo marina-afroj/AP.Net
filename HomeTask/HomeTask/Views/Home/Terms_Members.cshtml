@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Terms & Members";
+}
+<main>
+    
+    <h2 class="text-center">@ViewBag.Title</h2>
+    <section>
+
+    <h3>We Bring a Personal and Effective Approach to Every Project We Work On</h3>
+    <p>We have a team full of talented senior engineers of PHP, .NET, Android, and iOS. Nascenia is well-known as an outstanding Ruby on Rails outsourcing company from Bangladesh. It has been working with clients all over the world including USA, Canada, EU, UK, and AU.</p>
+
+
+    <h3>We Build Relationships</h3>
+    <p>Our talented and dedicated team works together enthusiastically to materialize your ideas.</p>
+
+
+    <h3>We Maintain Transparency</h3>
+    <p>We maintain an employee policy, requiring timely follow-up, to make sure the customer’s needs are met.</p>
+
+     </section>
+
+    <section>
+        <h1 class="text-center">Members</h1>
+        <br />
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Programming Language</th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tbody>
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Developer_Lang</td>
+                    </tr>
+                </tbody>
+            }
+
+        </table>
+
+    </section>
+</main>
+
